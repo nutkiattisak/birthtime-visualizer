@@ -1,4 +1,4 @@
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, ClockIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
 
 /**
@@ -6,9 +6,15 @@ import Index from "./pages/Index.jsx";
  */
 export const navItems = [
   {
-    title: "Home",
+    title: "หน้าหลัก",
     to: "/",
     icon: <HomeIcon className="h-4 w-4" />,
+    page: <Index />,
+  },
+  {
+    title: "เวลาที่เกิด",
+    to: "/birth-time",
+    icon: <ClockIcon className="h-4 w-4" />,
     page: <Index />,
   },
 ];
